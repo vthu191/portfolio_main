@@ -2,103 +2,94 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaGithub } from 'react-icons/fa';
 const projects = [
   {
-    "title": "Gahigi - AI Career Coach",
-    "description": 
-      "Meet Gahigi, your personal AI career coach. Designed to help young professionals in Rwanda, Gahigi offers personalized guidance and practical tools to kick-start your career. Whether you're preparing for interviews, building essential skills, or exploring the job market, Gahigi is your virtual mentor. Powered by AI, Gahigi provides tailored career advice, skill-building exercises, and interview simulations to boost your confidence and employability.",
-    "features": [
-      "Interview Practice: Simulates job interviews and offers constructive feedback.",
-      "Skill-Building Exercises: Interactive scenarios to develop essential workplace skills.",
-      "Personalized Career Advice: Tailored guidance based on individual strengths and interests.",
-      "Job Market Insights: Updates on entry-level opportunities in Rwanda's job market."
-    ],
-    "technologies": [
-      { "name": "Next.js", "icon": "/nextdotjs.svg" },
-      { "name": "NestJS", "icon": "/nestjs.svg" },
-      { "name": "Material UI", "icon": "/mui.svg" },
-      { "name": "LLaMA", "icon": "/ollama.svg" },
-      { "name": "Mixtral AI", "icon": "/Mistral_AI.png" },
-      { "name": "Prompt Engineering", "icon": "/chatbot.svg" },
-      { "name": "GROQ API", "icon": "/groq.png" }
-    ],
-    "livePreviewUrl": "https://gahigi.ini.rw/",
-    "githubUrl": "https://github.com/Gaahigi/gahigi-monorepo",
-    "imageSrc": "/gahigi.jpeg"
-},
-
-  {
-    title: "UniConnect",
+    title: "Healthcare website",
     description:
-      "UniConnect is a dynamic social media platform designed for students and individuals to connect, share ideas, and engage with their communities. Built with a modern tech stack, UniConnect offers a rich set of features to foster interaction, creativity, and collaboration. Whether you're posting updates, liking and commenting on posts, following peers, or engaging in direct messaging, UniConnect provides a seamless and intuitive user experience across devices",
+      "The spa booking website is an online platform that helps users easily search, book and manage spa services quickly. Customers can look up the list of nearest spas, view service details, prices, reviews and schedule an appointment at a suitable time. The system also integrates calendar reminders via email or text message to ensure convenience.",
     features: [
-      "Google OAuth: Secure authentication with Google",
-      "Push Notifications: Real-time updates powered by Stream.",
-      "Customizable Profiles: User profiles with personalization options.",
-      "Infinite Scrolling: Continuous content discovery.",
-      "File Uploads: Drag-and-drop and copy-paste support",
-      "Direct Messaging: Private messaging with real-time updates",
-      "Likes, Follows, and Comments: Standard social interaction features",
+      "Designing interfaces in Figma and creating responsive layouts",
+      "Using JSON Server to provide support for a fake REST API",
+      "Connecting with a third-party MOMO API",
     ],
-    technologies: [
-      { name: "Nextjs", icon: "/nextdotjs.svg" },
-      { name: "Tailwind CSS", icon: "/tailwindcss.svg" },
-      { name: "Prisma ", icon: "/prisma.svg" },
-      { name: "PostgresSQL ", icon: "/postgresql.svg" },
-      { name: "Lucia ", icon: "/lucia.svg" },
-      { name: "stream ", icon: "/streamlit.svg" },
-      { name: "React Query", icon: "/reactquery.svg" },
-      { name: "shadcn UI ", icon: "/shadcnui.svg" },
-    ],
-    livePreviewUrl: "https://uni-connect-omega.vercel.app/",
-    githubUrl: "https://github.com/munyanezaarmel/UniConnect",
-    imageSrc: "/uniconnect.png",
-  },
-  {
-    title: "Restaurant Finder",
-    description:
-      "Restaurant Finder  is a web application that simplifies the process of finding the perfect restaurant based on your preferred cuisine. Whether you're craving Indian, Italian, Chinese, or any other type of food, this app lets you easily discover nearby restaurants offering your desired cuisine. With seamless Google Maps integration, you can view restaurant locations on an interactive map, get real-time directions from your current location, and make your dining decisions with confidence",
-    features: [
-      "Cuisine-Based Search",
-      "Interactive Map",
-      "Real-Time Directions",
-      "Responsive Design",
-      "User authentication Google Auth",
-    ],
-    technologies: [
-      { name: "Nextjs", icon: "/nextdotjs.svg" },
-      { name: "Tailwind CSS", icon: "/tailwindcss.svg" },
-      { name: "Google Map ", icon: "/googlemaps.svg" },
-    ],
-    livePreviewUrl: "https://restaurant-finder-sigma.vercel.app/",
-    githubUrl: "https://github.com/munyanezaarmel/restaurantFinder",
-    imageSrc: "/restaurantFinder.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    duration: "Sep 2023 - Nov 2023",
+    githubUrl: "https://github.com/vanthu1223/Healthcare",
+    imageSrc: "/spa.png"
   },
 
   {
-    title: "Mark8",
+    title: "Bitstorm website",
     description:
-      "This E-commerce web showcases the development of modern E-commerce web applications using Next.js. The project aims to deliver a seamless user experience for viewing and purchasing products",
+      "The psychology consulting doctor booking project is an online platform that helps users easily make appointments with psychological consultants through online consultations. In addition to the scheduling function, the project also provides a posting feature so users can share their feelings and thoughts anonymously and receive support from the community. Users can participate in a safe space where they can seek empathy and advice without worrying about being judged.",
     features: [
-      "Browse products",
-      "Add products to the cart",
-      "Save favorite products",
-      "Filter products by category",
-      "View store products",
-      "Search for products and stores",
-      "User authentication (login and sign up)",
+      "Utilizing MySQL for data retrieval and implementing CRUD and search functionalities",
+      "Using PHP to display information according to the user's problem",
+      "Designing interface using Figma and using Trello for project management",
     ],
-    technologies: [
-      { name: "Nextjs", icon: "/nextdotjs.svg" },
-      { name: "NestJS", icon: "/nestjs.svg" },
-      { name: "Tailwind CSS", icon: "/tailwindcss.svg" },
-      { name: "React Query", icon: "/reactquery.svg" },
-      { name: "Redux", icon: "/redux.svg" },
-    ],
-    livePreviewUrl: "https://mark8-m31j.vercel.app/",
-    githubUrl: "https://github.com/munyanezaarmel/mark8",
-    imageSrc: "/mark8.png",
+    tags: ["Laravel", "Tailwind CSS", "JavaScript", "Figma", "React JS"],
+    duration: "Dec 2023 - Jan 2024",
+    githubUrl: "https://github.com/Pham-Gia-Bao1/BitStorm.",
+    imageSrc: "/bitstorm.png",
   },
+  {
+    title: "ChatGPT website",
+    description:
+      "The ChatGPT project is a platform that uses AI technology to provide help and support to users in areas such as consulting, entertainment, learning, and problem solving. The project allows users to communicate with ChatGPT through a chat interface where they can ask questions, request explanations, or discuss various topics",
+    features: [
+      "Designing interfaces in Figma and creating responsive layouts.",
+      "Handling API calls to Gemini and using React-Markdown for dynamic data rendering.",
+      "Implementing Google login and storing user data in the database using Supabase.",
+    ],
+    tags: ["ReactJS", "Tailwind CSS", "JavaScript", "Supebase", "Gemini model"],
+    duration: "Nov 2024 - Dec 2024",
+    githubUrl: "https://github.com/chatbot-devplus/Chatbot.git",
+    imageSrc: "/chat.jpg",
+  },
+  {
+    title: "AUTOMATIC SUBTITLES - SWAPBRAIN COMPANY",
+    description:
+      "The Translation Video Subtitle project is a platform that helps users translate video subtitles into languages ​​that websites or video platforms do not automatically support. This project will help automatically download the original subtitles, use powerful translation tools to translate into the desired language, and finally sync the translated subtitles to the video. This is especially useful for users who want to watch videos from platforms like YouTube, Vimeo, or sites that do not offer subtitle services for their language.",
+    features: [
+      "Developing an API to connect endpoints using the WebSocket protocol.",
+      "Implementing an algorithm to stream audio from a video and transcribe it into text in real time.",
+      "Creating an endpoint that returns the language based on the user's selection.",
+    ],
+    tags: ["ReactJS", "Tailwind CSS", "JavaScript", "Supebase", "Gemini model"],
+    duration: "June 2024 - Sep 2024",
+    githubUrl: "#",
+    imageSrc: "/extension.png",
+  },
+  {
+    title: "Portfolio",
+    description:
+      "My portfolio is where I introduce the projects, skills and experiences I have accumulated throughout my studies and work. Here you'll find real projects I've worked on, along with the solutions and technologies I use to solve problems",
+    features: [
+      "Developing an API to connect endpoints using the WebSocket protocol.",
+      "Implementing an algorithm to stream audio from a video and transcribe it into text in real time.",
+      "Creating an endpoint that returns the language based on the user's selection.",
+    ],
+    tags: ["Javascript", "Tailwind css", "ReactJS", "CSS"],
+    duration: "Dec 2024 - Feb 2025",
+    githubUrl: "https://github.com/vthu191/portfolio.git",
+    imageSrc: "/portfolio.png",
+  },
+  {
+    title: "Employee Management System with Integrated Gemini AI",
+    description:
+      "Employee management website provides a comprehensive solution for tracking and managing human resource information. Integrated AI features allow users to interact directly and receive support through a smart question and answer system. AI technology helps automate management tasks and improve work efficiency. This website provides an easier and smarter employee management experience",
+    features: [
+      "Built an Employee Management System for tracking records and performance.",
+      "Integrated Gemini AI for automated insights and task optimization.",
+      "Added secure authentication and role-based access control.",
+    ],
+    tags: ["ReactJS", "Typescript", "Tailwind css", "MySQL"],
+    duration: "Dec 2024 - Feb 2025",
+    githubUrl: "https://github.com/chatbot-devplus/employee-project-tracker.git",
+    imageSrc: "/chatbot.png",
+  },
+
 ];
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
@@ -106,7 +97,7 @@ const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba
 export default function Projects() {
   const [imageLoaded, setImageLoaded] = useState(false);
   return (
-    <div className="md:ml-40  px-4 md:px-0 mt-12 lg:mt-20">
+    <div className="md:ml-40  px-4 md:px-0  lg:mt-20">
       <h3 className="mb-8 text-xl md:text-4xl text-white font-semibold">
         Projects
       </h3>
@@ -137,29 +128,20 @@ export default function Projects() {
                 ))}
               </ul>
               <div className="flex flex-wrap gap-4">
-                {project.technologies.map((tech, techIndex) => (
-                  <div key={techIndex} className="flex items-center gap-2">
-                    <Image
-                      src={tech.icon}
-                      alt={`${tech.name} icon`}
-                      width={25}
-                      height={25}
-                    />
-                    <span className="font-medium text-sm">{tech.name}</span>
-                  </div>
-                ))}
+                <ul className="tags">
+                  {project.tags.map((tag, index) => (
+                    <li key={index}>
+                      <a href="#" className="tag">{tag}</a>
+                    </li>
+                  ))}
+                </ul>
               </div>
+
               <div className="flex justify-center items-center md:items-start md:justify-start flex-col sm:flex-row gap-4 md:mb-4">
-                <Link href={project.livePreviewUrl} target="_blank">
-                  <button className=" button back-gradient shadow-button w-full ">
-                    Live Preview
-                  </button>
-                </Link>
                 <Link href={project.githubUrl} target="_blank">
-                  <button className="hidden md:block border border-white text-white px-4 py-2 rounded-full font-bold cursor-pointer transition-opacity duration-300 w-full sm:w-[226px] h-[78px] text-lg hover:opacity-80">
-                    View on GitHub
-                  </button>
+                  <FaGithub size={30} color="#fff" />
                 </Link>
+                <p className="text-gray-400 mt-2 ml-auto">{project.duration}</p>
               </div>
             </div>
             <motion.div
@@ -176,11 +158,12 @@ export default function Projects() {
                 onLoad={() => setImageLoaded(true)}
                 src={project.imageSrc}
                 alt={`${project.title} project`}
-                layout="responsive"
-                width={100}
-                height={75}
-                className="rounded-xl"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                style={{ borderRadius: '1rem' }}
+                width={1000}
+                height={750}
               />
+
             </motion.div>
           </div>
         </motion.div>

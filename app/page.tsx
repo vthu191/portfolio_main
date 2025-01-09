@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Certifications from "./components/Certification";
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
       </section>
       <section id="projects">
         <Projects />
+      </section>
+      <section id="certifications">
+        <Certifications />
       </section>
       <section id="contact">
         <Contact />

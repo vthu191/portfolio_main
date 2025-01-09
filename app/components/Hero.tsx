@@ -18,13 +18,10 @@ export default function Hero() {
             Software Engineer
           </p>
           <p className="lg:mx-0 mx-4 max-w-prose gray font-medium lg:text-lg text-sm mb-8 capitalize-sentences ">
-            Frontend Engineer using HTML, CSS, JavaScript, TypeScript, React,
-            and Next.js. Backend using Node.js, .NET Core, Express, SQL,
-            Postgres, and Prisma. Can assist in building robust web, mobile, and
-            desktop applications. Additionally, I can handle deployment tasks.
+          I am currently a final-year student at the non-governmental organization Passerelles Numériques Vietnam. I have a strong passion for programming, particularly Front-End Development, and I am seeking an internship opportunity as a Software Engineer.
           </p>
           <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
-            <a download href="/Armel Munyaneza-RESUME.pdf">
+            <a download href="/cv.pdf">
               <button className="download-button button lg:mx-0  lg:mb-0 mb-12  ">
                 Download CV
               </button>
@@ -36,25 +33,25 @@ export default function Hero() {
           <div className="profile-glow-2 "></div>
           <div className="profile-glow"></div>
           <motion.div
-            // initial={false}
-            // animate={
-            //   imageLoaded
-            //     ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-            //     : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-            // }
-            // transition={{ duration: 1, delay: 0.5 }}
+            initial={false}
+            animate={
+              imageLoaded
+                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+            }
+            transition={{ duration: 1, delay: 0.5 }}
           >
             <Image
-              src="/armel.jpeg"
+              src="/bg_3.jpg"
               alt="Armel Munyaneza - Software Developer"
               width={301}
               height={301}
-              blurDataURL="/photo.jpg"
+              blurDataURL="/bg_1.jpg"
               onLoad={() => setImageLoaded(true)}
               quality={100}
               priority={true}
               placeholder="blur"
-              className="hover:scale-[1.025] transition-all duration-300 ease-in  profile-image filter grayscale"
+              className="hover:scale-[1.025] transition-all duration-300 ease-in  profile-image filter "
             />
           </motion.div>
         </div>

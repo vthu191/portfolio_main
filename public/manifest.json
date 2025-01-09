@@ -1,21 +1,21 @@
 {
-  "name": "Armel Munyaneza",
-  "short_name": "Armel",
+  "name": "Vân Thư",
+  "short_name": "Vthu",
   "icons": [
     {
-      "src": "./photo-fotor-192.jpg",
+      "src": "./bg_1.png",
       "sizes": "192x192",
       "type": "image/jpg",
       "purpose": "any maskable"
     },
     {
-      "src": "./photo-fotor-384.jpg",
+      "src": "./bg_3.jpg",
       "sizes": "384x384",
       "type": "image/jpg",
       "purpose": "any maskable"
     },
     {
-      "src": "./icon512_maskable.png",
+      "src": "./bg_1.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
