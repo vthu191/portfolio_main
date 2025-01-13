@@ -3,6 +3,18 @@
   --blue: 38, 157, 235;
   --red: 244, 75, 107;
 }
+.scroll-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .scroll-links {
+    gap: 5rem; 
+  }
+}
 h2 {
     display: block;
     position: relative;

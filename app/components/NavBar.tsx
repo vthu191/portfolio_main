@@ -1,13 +1,20 @@
 "use client";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
-
+import { useState } from "react";
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function NavBar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className="text-white text-poppins mt-12">
+    <div className="text-white text-poppins mt-12 ">
       <div className="md:flex md:justify-around md:items-center grid-cols-2 grid gap-y-4 md:px-0 px-5">
         <div className="md:col-span-1 order-1 sm:order-1">
           <p className="md:text-3xl text-2xl">V.T portfolio</p>
@@ -28,14 +35,6 @@ export default function NavBar() {
             className="cursor-pointer"
           >
             Projects
-          </ScrollLink>
-          <ScrollLink
-            to="certifications"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer"
-          >
-            Certifications
           </ScrollLink>
           <ScrollLink
             to="contact"
